@@ -224,10 +224,9 @@ export default function Home() {
             amarildohoxha55@gmail.com
           </a>
         </div>
-
-        <div className="footer-bottom">
-          © {new Date().getFullYear()} Rental Amaro. All rights reserved.
-        </div>
+<div className="footer-bottom">
+  © 2026 Rental Amaro. All rights reserved.
+</div>
       </footer>
     </main>
   );
