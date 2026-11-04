@@ -220,12 +220,12 @@ export default function Home() {
           <span>FIND US</span>
           <p>Rruga 7 Nëntori, Mëzez, Tirana, Albania</p>
           <a href="tel:+355697395866">+355 69 739 5866</a>
-          <a href="mailto:amarildohoxha55@gmail.com">
+          <a href="email:amarildohoxha55@gmail.com">
             amarildohoxha55@gmail.com
           </a>
         </div>
 <div className="footer-bottom">
-  © 2026 Rental Amaro. All rights reserved.
+  © 2026 Rental Amaro. All rights reserved D.H
 </div>
       </footer>
     </main>
