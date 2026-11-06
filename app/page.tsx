@@ -87,7 +87,7 @@ const cars = [
     year: "2013",
     engine: "2.0 GAZ",
     price: 30,
-    image: "/cars/kia-k5.jpg",
+    image: "/cars/Kia-K5.jpg",
   },
 ];
 
