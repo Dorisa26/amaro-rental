@@ -110,7 +110,7 @@ a {
   color: white;
   background:
     linear-gradient(90deg, rgba(15,17,15,.96) 0%, rgba(15,17,15,.85) 48%, rgba(15,17,15,.25) 100%),
-    url('/cars/kia-k5.jpg') center 57% / cover no-repeat;
+    url('/cars/Range-Rover-Sport.jpg') center 57% / cover no-repeat;
 }
 
 .hero-background {
