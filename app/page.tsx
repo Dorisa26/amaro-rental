@@ -1,31 +1,93 @@
 
 const cars = [
   {
+    name: "Range Rover Sport",
+    subtitle: "Luxury & Comfort",
+    year: "2014",
+    engine: "3.0 TDv6",
+    price: 150,
+    image: "/cars/Range-Rover-Sport.jpg",
+  },
+  {
+    name: "Mercedes Benz CLS",
+    subtitle: "Luxury & Performance",
+    year: "2012",
+    engine: "550",
+    price: 100,
+    image: "/cars/Mercedes-Benz-CLS.jpg",
+  },
+  {
+    name: "Mercedes Benz E250",
+    subtitle: "Comfort & Elegance",
+    year: "2010",
+    engine: "E250 CDI",
+    price: 40,
+    image: "/cars/Mercedes-Benz-E250.jpg",
+  },
+  {
+    name: "Mercedes Benz GLK",
+    subtitle: "Space & Comfort",
+    year: "2012",
+    engine: "220 CDI",
+    price: 40,
+    image: "/cars/Mercedes-Benz-GLK.jpg",
+  },
+  {
+    name: "BMW 5 Series",
+    subtitle: "Comfort & Elegance",
+    year: "2010",
+    engine: "520D",
+    price: 40,
+    image: "/cars/BMW-5-Series.jpg",
+  },
+  {
+    name: "Audi Q5",
+    subtitle: "Space & Comfort",
+    year: "2010",
+    engine: "2.0 TDI",
+    price: 70,
+    image: "/cars/Audi-Q5.jpg",
+  },
+  {
+    name: "Passat CC",
+    subtitle: "Comfort & Elegance",
+    year: "2014",
+    engine: "2.0 TDI",
+    price: 30,
+    image: "/cars/Passat-CC.jpg",
+  },
+  {
+    name: "Golf 6",
+    subtitle: "Comfort & Elegance",
+    year: "2009",
+    engine: "2.0 TDI",
+    price: 30,
+
+    image: "/cars/Golf-6.jpg",
+  },
+  {
+    name: "Golf 7",
+    subtitle: "Comfort & Elegance",
+    year: "2014",
+    engine: "2.0 TDI",
+    price: 40,
+    image: "/cars/Golf-7.jpg",
+  },
+  {
+    name: "Santa Fe",
+    subtitle: "Space & Comfort",
+    year: "2013",
+    engine: "2.0 eVGT",
+    price: 60,
+    image: "/cars/Santa-Fe.jpg",
+  },
+ {
     name: "Kia K5",
     subtitle: "Comfort & Elegance",
     year: "2013",
-    engine: "2.0 LPG",
+    engine: "2.0 GAZ",
     price: 30,
     image: "/cars/kia-k5.jpg",
-    category: "SEDAN",
-  },
-  {
-    name: "Audi Sedan",
-    subtitle: "Luxury & Performance",
-    year: "2015",
-    engine: "Diesel",
-    price: 50,
-    image: "/cars/audi-sedan.jpg",
-    category: "PREMIUM",
-  },
-  {
-    name: "Audi SUV",
-    subtitle: "Space & Comfort",
-    year: "2014",
-    engine: "Diesel",
-    price: 60,
-    image: "/cars/audi-suv.jpg",
-    category: "SUV",
   },
 ];
 
@@ -119,10 +181,6 @@ export default function Home() {
               <div className="car-photo">
                 <img src={car.image} alt={car.name} />
 
-                <span className="car-category">
-                  {car.category}
-                </span>
-
                 <span className="car-number">
                   0{index + 1}
                 </span>
@@ -140,7 +198,7 @@ export default function Home() {
                 <div className="car-specs">
                   <span>◷ {car.year}</span>
                   <span>⚙ {car.engine}</span>
-                  <span>✓ Automatic / Manual*</span>
+                  <span>Automatic</span>
                 </div>
 
                 <div className="car-footer">
