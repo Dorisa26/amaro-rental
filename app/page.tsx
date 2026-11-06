@@ -88,7 +88,7 @@ const cars = [
     engine: "2.0 GAZ",
     price: 30,
     image: "/cars/Kia-K5.jpg",
-  },
+  }
 ];
 
 export default function Home() {
