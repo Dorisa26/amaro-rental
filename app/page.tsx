@@ -20,7 +20,11 @@ const cars = [
     year: "2012",
     engine: "550",
     price: 100,
-    images: "/cars/Mercedes-Benz-CLS.jpg",
+    images:[
+     "/cars/Mercedes-Benz-CLS.jpg",
+      "/cars/Mercedes-Benz-CLS1.jpg",
+      "/cars/Mercedes-Benz-CLS2.jpg",
+    ]
   },
   {
     name: "Mercedes Benz E250",
@@ -28,7 +32,11 @@ const cars = [
     year: "2010",
     engine: "E250 CDI",
     price: 40,
-    images: "/cars/Mercedes-Benz-E250.jpg",
+    images:[
+     "/cars/Mercedes-Benz-E250.jpg",
+      "/cars/Mercedes-Benz-E2501.jpg",
+      "/cars/Mercedes-Benz-E2502.jpg",
+    ] 
   },
   {
     name: "Mercedes Benz GLK",
@@ -36,7 +44,11 @@ const cars = [
     year: "2012",
     engine: "220 CDI",
     price: 40,
-    images: "/cars/Mercedes-Benz-GLK.jpg",
+    images:[
+     "/cars/Mercedes-Benz-GLK.jpg",
+      "/cars/Mercedes-Benz-GLK1.jpg",
+      "/cars/Mercedes-Benz-GLK2.jpg",
+    ]
   },
   {
     name: "BMW 5 Series",
@@ -44,7 +56,11 @@ const cars = [
     year: "2010",
     engine: "520D",
     price: 40,
-    images: "/cars/BMW-5-Series.jpg",
+    images:[
+     "/cars/BMW-5-Series.jpg",
+      "/cars/BMW-5-Series1.jpg",
+      "/cars/BMW-5-Series2.jpg",
+    ]
   },
   {
     name: "Audi Q5",
@@ -52,7 +68,11 @@ const cars = [
     year: "2010",
     engine: "2.0 TDI",
     price: 70,
-    images: "/cars/Audi-Q5.jpg",
+    images:[
+     "/cars/Audi-Q5.jpg",
+      "/cars/Audi-Q5-1.jpg",
+      "/cars/Audi-Q5-2.jpg",
+    ] 
   },
   {
     name: "Passat CC",
@@ -60,7 +80,11 @@ const cars = [
     year: "2014",
     engine: "2.0 TDI",
     price: 30,
-    images: "/cars/Passat-CC.jpg",
+    images:[
+     "/cars/Passat-CC.jpg",
+      "/cars/Passat-CC1.jpg",
+      "/cars/Passat-CC2.jpg",
+    ] 
   },
   {
     name: "Golf 6",
@@ -68,8 +92,11 @@ const cars = [
     year: "2009",
     engine: "2.0 TDI",
     price: 30,
-
-    images: "/cars/Golf-6.jpg",
+    images:[
+     "/cars/Golf-6.jpg",
+      "/cars/Golf-6-1.jpg",
+      "/cars/Golf-6-2.jpg",
+    ] 
   },
   {
     name: "Golf 7",
@@ -77,7 +104,11 @@ const cars = [
     year: "2014",
     engine: "2.0 TDI",
     price: 40,
-    images: "/cars/Golf-7.jpg",
+    images:[
+     "/cars/Golf-7.jpg",
+      "/cars/Golf-7-1.jpg",
+      "/cars/Golf-7-2.jpg",
+    ]
   },
   {
     name: "Santa Fe",
@@ -85,7 +116,11 @@ const cars = [
     year: "2013",
     engine: "2.0 eVGT",
     price: 60,
-    images: "/cars/Santa-Fe.jpg",
+    images:[
+     "/cars/Santa-Fe.jpg",
+      "/cars/Santa-Fe1.jpg",
+      "/cars/Santa-Fe2.jpg",
+    ]
   },
  {
     name: "Kia K5",
@@ -93,7 +128,11 @@ const cars = [
     year: "2013",
     engine: "2.0 GAZ",
     price: 30,
-    images: "/cars/Kia-K5.jpg",
+    images:[
+     "/cars/Kia-K5.jpg",
+      "/cars/Kia-K51.jpg",
+      "/cars/Kia-K52.jpg",
+    ]
   }
 ];
 
