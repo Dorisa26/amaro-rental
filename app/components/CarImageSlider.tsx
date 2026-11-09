@@ -14,30 +14,36 @@ export default function CarImageSlider({
   alt,
   number,
 }: CarImageSliderProps) {
+
+  // Convert images into an array
+  const imageList: string[] = Array.isArray(images)
+    ? images
+    : [images];
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const previousImage = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? images.length - 1 : prev - 1
+      prev === 0 ? imageList.length - 1 : prev - 1
     );
   };
 
   const nextImage = () => {
     setCurrentIndex((prev) =>
-      prev === images.length - 1 ? 0 : prev + 1
+      prev === imageList.length - 1 ? 0 : prev + 1
     );
   };
 
   return (
     <div className="car-photo">
       <img
-        src={images[currentIndex]}
+        src={imageList[currentIndex]}
         alt={`${alt} - photo ${currentIndex + 1}`}
       />
 
       <span className="car-number">{number}</span>
 
-      {images.length > 1 && (
+      {imageList.length > 1 && (
         <>
           <button
             type="button"
@@ -56,23 +62,21 @@ export default function CarImageSlider({
           >
             ›
           </button>
-        </>
-      )}
 
-      {images.length > 1 && (
-        <div className="car-slider-dots">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              type="button"
-              className={`car-slider-dot ${
-                currentIndex === index ? "active" : ""
-              }`}
-              onClick={() => setCurrentIndex(index)}
-              aria-label={`Go to photo ${index + 1}`}
-            />
-          ))}
-        </div>
+          <div className="car-slider-dots">
+            {imageList.map((_, index: number) => (
+              <button
+                key={index}
+                type="button"
+                className={`car-slider-dot ${
+                  currentIndex === index ? "active" : ""
+                }`}
+                onClick={() => setCurrentIndex(index)}
+                aria-label={`Go to photo ${index + 1}`}
+              />
+            ))}
+          </div>
+        </>
       )}
     </div>
   );
