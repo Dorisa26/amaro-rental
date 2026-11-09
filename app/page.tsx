@@ -1,4 +1,6 @@
 
+import CarImageSlider from "./components/CarImageSlider";
+
 const cars = [
   {
     name: "Range Rover Sport",
@@ -6,7 +8,11 @@ const cars = [
     year: "2014",
     engine: "3.0 TDv6",
     price: 150,
-    image: "/cars/Range-Rover-Sport.jpg",
+    images: [
+    "/cars/Range-Rover-Sport.jpg",
+    "/cars/Range-Rover-Sport1.jpg",
+    "/cars/Range-Rover-Sport2.jpg",
+    ]
   },
   {
     name: "Mercedes Benz CLS",
@@ -14,7 +20,7 @@ const cars = [
     year: "2012",
     engine: "550",
     price: 100,
-    image: "/cars/Mercedes-Benz-CLS.jpg",
+    images: "/cars/Mercedes-Benz-CLS.jpg",
   },
   {
     name: "Mercedes Benz E250",
@@ -22,7 +28,7 @@ const cars = [
     year: "2010",
     engine: "E250 CDI",
     price: 40,
-    image: "/cars/Mercedes-Benz-E250.jpg",
+    images: "/cars/Mercedes-Benz-E250.jpg",
   },
   {
     name: "Mercedes Benz GLK",
@@ -30,7 +36,7 @@ const cars = [
     year: "2012",
     engine: "220 CDI",
     price: 40,
-    image: "/cars/Mercedes-Benz-GLK.jpg",
+    images: "/cars/Mercedes-Benz-GLK.jpg",
   },
   {
     name: "BMW 5 Series",
@@ -38,7 +44,7 @@ const cars = [
     year: "2010",
     engine: "520D",
     price: 40,
-    image: "/cars/BMW-5-Series.jpg",
+    images: "/cars/BMW-5-Series.jpg",
   },
   {
     name: "Audi Q5",
@@ -46,7 +52,7 @@ const cars = [
     year: "2010",
     engine: "2.0 TDI",
     price: 70,
-    image: "/cars/Audi-Q5.jpg",
+    images: "/cars/Audi-Q5.jpg",
   },
   {
     name: "Passat CC",
@@ -54,7 +60,7 @@ const cars = [
     year: "2014",
     engine: "2.0 TDI",
     price: 30,
-    image: "/cars/Passat-CC.jpg",
+    images: "/cars/Passat-CC.jpg",
   },
   {
     name: "Golf 6",
@@ -63,7 +69,7 @@ const cars = [
     engine: "2.0 TDI",
     price: 30,
 
-    image: "/cars/Golf-6.jpg",
+    images: "/cars/Golf-6.jpg",
   },
   {
     name: "Golf 7",
@@ -71,7 +77,7 @@ const cars = [
     year: "2014",
     engine: "2.0 TDI",
     price: 40,
-    image: "/cars/Golf-7.jpg",
+    images: "/cars/Golf-7.jpg",
   },
   {
     name: "Santa Fe",
@@ -79,7 +85,7 @@ const cars = [
     year: "2013",
     engine: "2.0 eVGT",
     price: 60,
-    image: "/cars/Santa-Fe.jpg",
+    images: "/cars/Santa-Fe.jpg",
   },
  {
     name: "Kia K5",
@@ -87,7 +93,7 @@ const cars = [
     year: "2013",
     engine: "2.0 GAZ",
     price: 30,
-    image: "/cars/Kia-K5.jpg",
+    images: "/cars/Kia-K5.jpg",
   }
 ];
 
@@ -178,13 +184,11 @@ export default function Home() {
         <div className="fleet-grid">
           {cars.map((car, index) => (
             <article className="car-card" key={car.name}>
-              <div className="car-photo">
-                <img src={car.image} alt={car.name} />
-
-                <span className="car-number">
-                  0{index + 1}
-                </span>
-              </div>
+            <CarImageSlider
+           images={car.images}
+           alt={car.name}
+           number={String(index + 1).padStart(2, "0")}
+/>
 
               <div className="car-info">
                 <div className="car-title">
